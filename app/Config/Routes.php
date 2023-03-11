@@ -34,6 +34,7 @@ $routes->get('/users', 'Admin\Users::index');
 $routes->get('/pages', 'Pages::index');
 $routes->get('/pages/about', 'Pages::about');
 $routes->get('/pages/contact', 'Pages::contact');
+$routes->get('/comics', 'Comics::index');
 
 /*
  * --------------------------------------------------------------------

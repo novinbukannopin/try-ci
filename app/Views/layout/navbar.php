@@ -16,6 +16,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="<?= base_url('/pages/contact'); ?>">Contact</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="<?= base_url('/comics'); ?>">Comics</a>
+                </li>
             </ul>
         </div>
 </nav>
