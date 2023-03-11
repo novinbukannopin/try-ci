@@ -27,11 +27,17 @@
                     <li class="nav-item">
                         <a class="nav-link" href="<?= base_url('/pages/about'); ?>">About</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?= base_url('/pages/contact'); ?>">Contact</a>
+                    </li>
                 </ul>
             </div>
     </nav>
 
-    <?= $this->renderSection('content'); ?>
+    <div class="container">
+
+        <?= $this->renderSection('content'); ?>
+    </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
