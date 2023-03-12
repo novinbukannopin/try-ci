@@ -59,6 +59,7 @@ class Comics extends BaseController
             'picture' => $this->request->getVar('picture'),
         ]);
 
+        session()->setFlashdata('message', 'Film added succesfully !!');
         return redirect()->to('/comics');
     }
 }

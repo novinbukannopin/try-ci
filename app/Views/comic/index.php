@@ -3,6 +3,11 @@
 <?= $this->section('content'); ?>
 <h1 class="mt-6">List Film</h1>
 <a href="/comics/create" class="btn btn-primary mb-3">Add Film</a>
+<?php if (session()->getFlashdata('message')) : ?>
+    <div class="alert alert-success" role="alert">
+        <?= session()->getFlashdata('message') ?>
+    </div>
+<?php endif; ?>
 <table class="table">
     <thead>
         <tr>
