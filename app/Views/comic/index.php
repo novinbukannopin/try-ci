@@ -1,7 +1,8 @@
 <?= $this->extend('layout/template'); ?>
 
 <?= $this->section('content'); ?>
-<h1 class="mt-6">List Comic</h1>
+<h1 class="mt-6">List Film</h1>
+<a href="/comics/create" class="btn btn-primary mb-3">Add Film</a>
 <table class="table">
     <thead>
         <tr>
@@ -17,7 +18,7 @@
                 <th scope="row" class="align-middle"><?= $f['id'] ?></th>
                 <td><img src="/img/<?= $f['picture'] ?>" alt="" class="rounded-sm"></td>
                 <td class="align-middle"><?= $f['title'] ?></td>
-                <td class="align-middle"><a href="" class="btn btn-success">Detail</a></td>
+                <td class="align-middle"><a href="/comics/<?= $f['slug'] ?>" class="btn btn-success">Detail</a></td>
             </tr>
         <?php endforeach ?>
     </tbody>
